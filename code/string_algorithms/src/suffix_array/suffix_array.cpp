@@ -12,12 +12,6 @@ int compare(struct suffix x, struct suffix y) {
 	return strcmp(x.suff,y.suff) < 0? 1:0;
 }
 
-void printArray(int arr[], int n) {
-	for (int i = 0; i < n; i++)
-		cout << arr[i] << " ";
-	cout << endl;
-}
-
 int *suffixArray(char *txt, int n) {
 	struct suffix suffixes[n];
 	for (int i = 0; i < n; i++) {
